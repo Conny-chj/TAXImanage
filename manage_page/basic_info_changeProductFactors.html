@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+<title>人车更换管理</title>
+
+</head>
+
+<body>
+	<header>
+		<div class="head_left">
+			<a href="../index.html" ><img id="logo" name="SYSname" src="../img/taxi_logo.jpg" alt="返回首页" /></a>
+			<span class="SYSname">人车更换管理</span>
+		</div>
+		
+		<div class="head_right">		
+			<div class="message">
+				<div class="mail">
+					<a href="..index.html"><img class="mail" src="../img/mail.png"></a>
+				</div>
+				<div class="notice">3</div>
+			</div>
+			<div class="userinfo">
+				<p>欢迎你，管理员</p>
+				<div class="password">
+					<button>修改密码</button>
+				</div>
+				<div class="login-out">
+					<button>退出登录</button>
+				</div>
+			</div>
+		</div>		
+	</header>
+	<nav>
+		管理功能菜单
+		<ul>
+			<li class="navbar1">基础信息管理</li>
+				<ul>
+					<li class="navbar2"><a href="basic_info_franchise.html">经营权管理</a></li>
+					<li class="navbar2"><a href="basic_info_vehicle.html">车辆管理</a></li>
+					<li class="navbar2"><a href="basic_info_driver.html">驾驶员管理</a></li>
+					<li class="navbar2"><a href="basic_info_equipment.html">设施设备管理</a></li>	
+					<li class="navbar2"><a href="basic_info_changeProductFactors.html">人车更换管理</a></li>
+				</ul>
+			<li class="navbar1">营运动态管理</li>
+				<ul>
+					
+					<li class="navbar2"><a href="acticve_info_violation_transport.html">客运违章管理</a></li>
+					<li class="navbar2"><a href="acticve_info_violation_traffic.html">交通违法管理</a></li>
+					<li class="navbar2"><a href="acticve_info_education.html">继续教育管理</a></li>
+					<li class="navbar2"><a href="acticve_info_accident.html">车辆事故管理</a></li>
+					<li class="navbar2"><a href="acticve_info_complaint.html">投诉管理</a></li>	
+					<li class="navbar2"><a href="acticve_info_lost.html">失物管理</a></li>
+					<li class="navbar2"><a href="acticve_info_maintenance.html">保养管理</a></li>
+					<li class="navbar2"><a href="acticve_info_insurance.html">保险管理</a></li>
+				</ul>
+			<li class="navbar1">高级营运管理</li>
+				<ul>
+					<li class="navbar2"><a href="senior_info_monitoring.html">重点监控管理</a></li>
+					<li class="navbar2"><a href="senior_info_record.html">人车档案</a></li>					
+				</ul>
+			<li class="navbar1">系统管理</li>
+				<ul>
+					<li class="navbar2"><a href="system_manage_user.html">用户管理</a></li>
+				</ul>
+		</ul>
+		
+	</nav>
+	<main>
+		<form class="searchbar">
+			<div class="searchbox">
+				<input class="text-input" type="text" autofocus="autofocus" placeholder="自编号/车主姓名/身份证号" >
+			</div>
+			<div class="searchbox">
+				<span>营运状态：</span>
+				<select>
+					<option value="全部">全部</option>
+					<option value="正常">正常</option>
+					<option value="停运">停运</option>
+					<option value="车辆下线">车辆下线</option>
+					<option value="车辆下线未办理手续">车辆下线未办理手续</option>
+					<option value="已转出">已转出</option>
+					<option value="已注销">已注销</option>
+				</select>
+			</div>
+			<div class="searchbox">
+				<span>经营权到期时间： </span>
+				<input class="text-input" type="date" >-<input class="text-input" type="date" >
+			</div>
+			<div class="searchbox">
+				<input class="text-input" type="submit" value="查询">
+			</div>
+			<div class="searchbox">
+				<input class="text-input" type="submit" value="导出">
+			</div>
+		</form>
+		<div class="centerbar">
+			<span style="width:10em">基本信息</span>
+			<div class="addbar">
+				<button>批量上传</button>
+				<button>添加经营权</button>
+			</div>
+		</div>
+	  	<div class="searchresult">
+            <table class="tbresult">
+              <tbody>
+                <tr>
+                  <th scope="row">序号</th>
+                  <td>详情</td>
+                  <td>经营权号</td>
+                  <td>营运状态</td>
+                  <td>持有人</td>
+                  <td>性别</td>
+                  <td>身份证号</td>
+                  <td>联系方式</td>
+                  <td>获得方式</td>
+                  <td>获得时间</td>
+                  <td>有效期起</td>
+                  <td>有效期止</td>
+                  <td>托管公司</td>
+                  <td>托管时间起</td>
+                  <td>托管时间止</td>
+                  <td>编辑</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><button>点击打开</button></td>
+                  <td>02012</td>
+                  <td>正常</td>
+                  <td>XX</td>
+                  <td>男</td>
+                  <td>51000000000000000X</td>
+                  <td>13000000000</td>
+                  <td>延期获批</td>
+                  <td>2018/01/22</td>
+                  <td>2023/03/01</td>
+                  <td>2023/02/28</td>
+                  <td>服务二公司</td>
+                  <td>2023/03/01</td>
+                  <td>2023/02/28</td>
+                  <td><button>更改</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+			</table>
+        </div>
+    </main>
+	<footer>
+		<span white-space="pre">开发者：CJ     联系方式：028-83170319     e-mail：jy02129563@163.com</span>
+	</footer>
+</body>
+</html>

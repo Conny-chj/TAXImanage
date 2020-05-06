@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	
+	<title>出租汽车服务公司信息管理系统</title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header>
+		<div class="head_left">
+			<a href="index.html" ><img id="logo" name="SYSname" src="img/taxi_logo.jpg" alt="返回首页" /></a>
+			<span class="SYSname">出租汽车服务公司信息管理系统</span>
+		</div>
+		<div class="head_right">
+		<!-- 	<div class="nowtime" id='Date'>	
+				<script type="text/javascript"> 
+                	setInterval(function(){   
+						var date = new Date();   
+						var year = date.getFullYear();    //获取当前年份   
+						var mon = date.getMonth()+1;      //获取当前月份   
+						var da = date.getDate();          //获取当前日   
+						var day = date.getDay();          //获取当前星期几   
+						var h = date.getHours();          //获取小时   
+						var m = date.getMinutes();        //获取分钟   
+						var s = date.getSeconds();        //获取秒   
+						var d = document.getElementById('Date');    
+						d.innerHTML='当前时间:<br />'+year+'年'+mon+'月'+da+'日<br />'+'星期'+day+' '+h+':'+m+':'+s;
+					},1000)
+              </script>
+			</div>		-->	
+			<div class="message">
+				<div class="mail">
+					<a href="index.html"><img class="mail" src="img/mail.png"></a>
+				</div>
+				<div class="notice">3</div>
+			</div>
+			<div class="userinfo">
+				<p>欢迎你，管理员</p>
+				<div class="password">
+					<button>修改密码</button>
+				</div>
+				<div class="login-out">
+					<button>退出登录</button>
+				</div>
+			</div>
+		</div>		
+	</header>
+	<nav>
+		管理功能菜单
+		<ul>
+			<li class="navbar1">基础信息管理</li>
+				<ul>
+					<li class="navbar2"><a>经营权管理</a></li>
+					<li class="navbar2"><a>车辆管理</a></li>
+					<li class="navbar2"><a>驾驶员管理</a></li>
+					<li class="navbar2"><a>设施设备管理</a></li>					
+				</ul>
+			<li class="navbar1">营运动态管理</li>
+				<ul>
+					
+					<li class="navbar2"><a>客运违章管理</a></li>
+					<li class="navbar2"><a>交通违法管理</a></li>
+					<li class="navbar2"><a>继续教育管理</a></li>
+					<li class="navbar2"><a>车辆事故管理</a></li>
+					<li class="navbar2"><a>投诉管理</a></li>
+					<li class="navbar2"><a>失物管理</a></li>
+					<li class="navbar2"><a>保养管理</a></li>
+					<li class="navbar2"><a>保险管理</a></li>
+				</ul>
+			<li class="navbar1">高级营运管理</li>
+				<ul>
+					<li class="navbar2"><a>重点监控管理</a></li>
+					<li class="navbar2"><a>人车档案</a></li>					
+				</ul>
+			<li class="navbar1">系统管理</li>
+				<ul>
+					<li class="navbar2"><a>用户管理</a></li>
+				</ul>
+		</ul>
+		
+	</nav>
+	<main>
+		这里是工作区
+		<p>主页面	<strong>显示</strong> 在营车辆/车辆总数	在册驾驶员数量	日平均营收	日均工作时长等数据图表</p>
+		<p>个人工作台页	<strong>显示</strong>	通知栏	未完成工作栏</p>
+		<p>车辆管理页	<strong>显示</strong>	条件查询栏	查询显示栏	查、删、改、导出按钮</p>
+		<p>驾驶员管理页	<strong>显示</strong>	条件查询栏	查询显示栏	查、删、改、导出按钮</p>
+		<p>保养管理页	<strong>显示</strong>	条件查询栏	查询显示栏	查、删、改、导出按钮</p>
+		<p>保险管理页	<strong>显示</strong>	条件查询栏	查询显示栏	查、删、改、导出按钮</p>
+		<p>投诉管理页	<strong>显示</strong>	条件查询栏	查询显示栏	查、删、改、导出按钮</p>
+	</main>
+	<footer>
+		开发人：CJ     联系方式：028-83170319     	e-mail：jy02129563@163.com
+	</footer>
+</body>
+</html>

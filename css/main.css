@@ -1,0 +1,236 @@
+/**********************
+全局元素
+**********************/
+ul,li,div{
+	list-style: none;
+	margin:0;
+    padding:0;
+}
+a{
+	text-decoration: none;
+}
+
+/**********************
+BODYSET
+**********************/
+body {
+	background-color:#F3F0B5;
+	
+}
+header {
+	background-color:aqua;
+	height: 6em;
+	width: 99%;
+	border: 1px solid black;
+	
+	
+}
+nav {
+	float: left;
+	margin-top: 0.5em;
+	border: silver solid 1px;
+	padding: 0 0.5em;
+	height: 100%;
+	background-color: cornflowerblue;	
+	line-height: 1.5em;
+	border: 1px solid black;
+	font-size: 19px;
+	
+	
+}
+main {
+	/*position:fixed;
+	top:10%;
+	bottom: :5%;
+	left:10%;
+	right: 0;*/
+	float:left;
+	margin-top: 0.5em;
+	border: 1px solid black;
+	width: 85%;
+}
+footer {
+	position:fixed;
+	bottom:0%;
+	top:95%;
+	left:0;
+	right:0;
+	text-align: center;
+	background-color:aliceblue;
+}
+
+
+/**********************
+HEADERSET
+**********************/
+.nowtime, .message, .userinfo{
+	display: inline-block;
+}
+
+
+.head_left {
+	background-color:inherit;
+	float: left;
+	width: 50%
+	vertical-align: bottom;
+}
+
+.head_right {
+	background-color:inherit;
+	float: right;
+	text-align: right;	
+	width: 50%;
+}
+
+
+
+/**********************
+HEADER-LEFT
+**********************/
+#logo {
+	
+	max-width: 50px;
+	float:left;
+	border-radius: 10%;
+	padding: -2px 0 0 2px;
+	margin: 1em -10px 0 1em;
+	
+	opacity:0.7; 
+	
+}
+
+.SYSname {	
+	display: inline;
+	margin-left: 10px;
+	font-size:30px;
+	line-height: 2em;
+}
+
+/**********************
+HEADER-RIGHT-nowtime
+**********************/
+
+
+.nowtime{
+	margin-bottom:10px;
+	border:1px solid silver;
+}
+/**********************
+HEADER-RIGHT-message
+**********************/
+.message {
+    width:50px;
+    margin-bottom:5px;
+    position:relative;
+}
+.mail {
+    width:32px;
+    height:32px;
+    border:1px solid #FFF;
+}
+.notice {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #f00;
+    border-radius: 50%;
+    position: absolute;
+    right: 9px;
+    top: -7px;
+}
+/**********************
+HEADER-RIGHT-userinfo
+**********************/
+.userinfo {
+	margin-right: 10px;
+}
+.userinfo > p {
+	text-align: justify;
+}
+
+.password , .login-out {
+	display:inline-block;
+}
+/**********************
+NAVBARSET
+**********************/
+
+.navbar1 {
+	color: #B4EDE9;
+	padding: 0.5em 0;
+	font-size: 17px;
+}
+
+.navbar2 {
+	color: white;
+	font-size: 15px;
+}
+/**********************
+MAINSET-INDEX
+**********************/
+
+.chart {
+	width: 10em;
+	height: 10em;
+	background-color: white;
+	border: 1px solid black;	
+	display: inline-block;
+	
+}
+.basic_chart {
+	float: left;
+	margin: 2em;
+	text-align: center;
+}
+/**********************
+MAINSET-BASIC-INFO-top
+**********************/
+.searchbar {
+	height: 8em;
+	width: 100%;
+	text-align: center;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+.searchbox {
+	float: left;
+	margin: 10px 10px;
+	line-height: 1.4;
+	border: 1px solid black;
+}
+
+.searchresult {	
+	border: 1px solid black;
+	
+}
+/**********************
+MAINSET-BASIC-INFO-center
+**********************/
+.centerbar {
+	margin: 5px 0;
+}
+.addbar {
+	float: right;
+	display: inline;	
+}
+
+/**********************
+MAINSET-BASIC-INFO-bottom
+**********************/
+.tbresult {
+	border: 1px solid black;
+	max-width: AUTO;
+}
+
+td {
+	border: 1px solid black;
+}
+
+
+
+
+
